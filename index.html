@@ -1,1 +1,170 @@
-<!-- Suelta tus manos y tu mente para solucionar este reto -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Adding Bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Adding LeafLet for showing the map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin="" />
+
+  <!-- Adding FontAwesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+
+  <!-- Adding stylesheet -->
+  <link rel="stylesheet" href="../lab-car-boilerplate/css/main.css">
+  <title>LabCar</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-logo">
+        <img src="../lab-car-boilerplate/assets/images/logoForma.png">
+      </div>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#"></a>
+        <div class="navOptions">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Viaja<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Conduce</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Inicia Sesión</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Content -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12" id="page1">
+        <div class="content-page-1 col-md-12">
+          <h2>Comienza a Viajar Con <img src="../lab-car-boilerplate/assets/images/logoBlanco.png" alt="logo" class="main-page-logo"></h2>
+          <button class="btn download-btn">Descarga el App</button>
+        </div>
+      </div>
+      <div class="col-md-12" id="page2">
+        <div class="new-app">
+          <h4>La nueva App</h4>
+          <img class="iphone-photo" src="../lab-car-boilerplate/assets/images/iPhone6Plus.png" alt="iphone">
+        </div>
+        <div class="text-page-2">
+          <h5>Llega a tu destino aún más rápido</h5>
+        </div>
+      </div>
+      <div class="col-md-12" id="page3">
+        <div class="text-page-3">
+          <h4><strong>Conduce cuando quieras</strong></h4>
+          <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
+          <button class="btn drive-btn">Conviertete en Conductor</button>
+        </div>
+      </div>
+      <div class="col-md-12" id="page4">
+        <div class="content-page-4">
+          <form>
+            <div class="form-tittle">
+              <h4>Tarifas</h4>
+            </div>
+            <div class="form-group">
+              <label><img src="../lab-car-boilerplate/assets/images/shape.png" alt="Location"></label>
+              <input type="text" class="form-control" id="currentLocation" placeholder="Ubicación">
+            </div>
+            <div class="form-group">
+              <label><img src="../lab-car-boilerplate/assets/images/shape2.png" alt="Final Destination"></label>
+              <input type="text" class="form-control" id="finalLocation" placeholder="¿A dónde te diriges?">
+            </div>
+            <div class="route">
+              <button class="btn route-btn">¡Trazar Ruta!</button>
+            </div>
+          </form>
+          <div id="mapid"></div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer>
+        <div class="footer font-small bg-dark col-md-12">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><img src="../lab-car-boilerplate/assets/images/logoBlanco.png"
+              alt="logo"></h5>
+          <div class="row">
+            <div class="col-4">
+              <div class="mx-auto">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!">Viaja</a>
+                  </li>
+                  <li>
+                    <a href="#!">Conduce</a>
+                  </li>
+                  <li>
+                    <a href="#!">Ciudades</a>
+                  </li>
+                  <li>
+                    <a href="#!">Entregas</a>
+                  </li>
+                  <li>
+                    <a href="#!">¿Cómo Funciona?</a>
+                  </li>
+                  <li>
+                    <a href="#!">Paises</a>
+                  </li>
+                  <li>
+                    <a href="#!">Seguridad</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="list-inline-group list-group-horizontal">
+                <a href="#" class="list-inline-group-item"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="list-inline-group-item"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="list-inline-group-item"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="list-inline-group-item"><i class="fab fa-apple"></i></a>
+              </div>
+                <img class="downloadImg" src="../lab-car-boilerplate/assets/images/enBadgeWebGeneric.png" alt="PlayStore">
+                <img class="downloadImg" src="../lab-car-boilerplate/assets/images/appstore.png" alt="appStore">
+            </div>
+          </div>
+          <div class="footer-copyright text-center py-3 col-md-12">© 2017 Copyright:
+            <a href="#"> LabCar Technologies Inc.</a>
+          </div>
+      </footer>
+      </div>
+    </div>
+
+    <!-- Adding Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+
+    <!-- Adding LeafLet script -->
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+      crossorigin=""></script>
+
+    <!-- Adding JS -->
+    <script src="../lab-car-boilerplate/js/app.js"></script>
+    <script src="../lab-car-boilerplate/js/map.js"></script>
+
+    <!-- End Of document -->
+</body>
+
+</html>

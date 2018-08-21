@@ -1,1 +1,203 @@
-/* Los estilos de tu proyecto */
+/* Main style for body*/
+body,
+html,
+.page,
+.container-fluid {
+    height: 100vh;
+}
+
+/* Footer style*/
+.footer {
+    padding: 1.5em;
+    position: relative;
+    width: -webkit-fill-available;
+}
+
+.footer a,
+.footer-copyright {
+  color: #FFFFFF;
+}
+
+/* Navbar Style */
+.navOptions {
+    margin-left: auto;
+}
+
+.navbar-logo {
+    margin-left: 1em;
+    margin-right: auto;
+}
+
+/* General content style */
+
+.content-page-1 {
+    margin-right: 0;
+    margin-left: 1em;
+    margin-top: 12em;
+    color: aliceblue;
+    background-color: #F7B617;
+    padding: 2em;
+    border-radius: 2%
+}
+
+.new-app {
+    text-align: -webkit-center;
+    border: 1.5px;
+    border-style: solid;
+    margin-top: 1em;
+    border-color: white;
+    margin-bottom: 1em;
+    padding: 1.3em;
+    color: aliceblue
+}
+
+
+.content-page-4 {
+    margin-top: 7em;
+    margin-bottom: 4em;
+}
+
+.content-page-4 form{
+    margin-bottom: 4em;
+}
+
+/* Images Logo style */
+
+.main-page-logo {
+    margin-left: .4em;
+}
+
+.iphone-photo {
+    width: 80%;
+}
+
+/* Text Style */
+
+.text-page-2 {
+    margin-top: 2em;
+    text-align: -webkit-center;
+    color: white;
+    font-weight: 500;
+}
+
+.text-page-3 {
+    margin-top: 4em;
+    margin-left: 3em;
+    color: #FFFFFF
+}
+
+/* Buttons style */
+
+.download-btn {
+    margin-top: 1.5em;
+    background-color: white;
+    font-weight: 500;
+    font-size: larger;
+    border-radius: .40em;
+}
+
+.drive-btn {
+    background-color: #F7B617;
+    color: whitesmoke;
+    font-weight: bolder;
+    padding: .5em;
+    font-stretch: expanded;
+}
+
+/* Page 4 Form Style */
+
+.form-tittle {
+    color: #FFFFFF;
+}
+
+.form-control {
+    display: inline-block;
+    width: 80%
+}
+
+.form-group img {
+    margin-right: 1em;
+}
+
+.form-group input {
+    background-color: transparent;
+    color: #FFFFFF;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.form-group input::placeholder {
+    color: #FFFFFF;
+}
+
+/* Footer list style */
+
+.list-inline-group {
+  width: max-content;
+}
+
+.downloadImg {
+  margin: .5em;
+}
+
+.list-inline-group-item {
+  margin: .5em;
+  color: #FFFFFF;
+}
+
+/* Button Route style */
+.route-btn {
+    background-color: #FFFFFF;
+    color: #2B2B2B;
+    font-weight: bolder;
+}
+
+.route {
+    text-align: center;
+}
+
+
+/* Footer sections style */
+
+.footer-style {
+   width: 40%;
+    display: inline-block;
+}
+
+/* Background style  */
+#page1 {
+    background-image: url('../assets/images/taxi.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: -webkit-fill-available;
+}
+
+#page2 {
+    background-color: #F7B617;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto; 
+}
+
+#page3 {
+    background-image: url('../assets/images/conduce.jpg');
+    background-color: gray;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    padding-bottom: 7em;
+}
+
+#page4 {
+    background-color: #F7B617;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto; 
+}
+
+
+/* Map Style */
+#mapid {
+    height: 400px;
+}
