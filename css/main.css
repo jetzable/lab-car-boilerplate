@@ -10,7 +10,6 @@ html,
 .footer {
     padding: 1.5em;
     position: relative;
-    width: -webkit-fill-available;
 }
 
 .footer a,
@@ -68,7 +67,7 @@ html,
 }
 
 .iphone-photo {
-    width: 80%;
+    width: 70%;
 }
 
 /* Text Style */
@@ -138,6 +137,7 @@ html,
 
 .downloadImg {
   margin: .5em;
+  width: 150px;
 }
 
 .list-inline-group-item {
@@ -200,4 +200,7 @@ html,
 /* Map Style */
 #mapid {
     height: 400px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
