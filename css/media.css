@@ -1,0 +1,25 @@
+@media (min-width: 576px) {
+    .content-page-1,
+    .mobile-content-page-2,
+    .mobile-content-page-3 {
+        display: none;
+    }
+    .desktop-page-1 {
+        display: block;
+        padding: .8em;
+    }
+    .desktop-page-2,
+    .desktop-page-3 {
+        display: block;
+    }
+ }
+
+
+@media (min-width: 992px) { 
+    .desktop-page-1 {
+        margin-top: 5%;
+    }
+    .desktop-page-1 h2, h3{
+        margin-bottom: .5em;
+    }
+ }

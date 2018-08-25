@@ -17,7 +17,8 @@
     crossorigin="anonymous">
 
   <!-- Adding stylesheet -->
-  <link rel="stylesheet" href="../lab-car-boilerplate/css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
   <title>LabCar</title>
 </head>
 
@@ -30,7 +31,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="navbar-logo">
-        <img src="../lab-car-boilerplate/assets/images/logoForma.png">
+        <img src="assets/images/logoForma.png">
       </div>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <a class="navbar-brand" href="#"></a>
@@ -55,55 +56,95 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12" id="page1">
-        <div class="content-page-1 col-md-12">
-          <h2>Comienza a Viajar Con <img src="../lab-car-boilerplate/assets/images/logoBlanco.png" alt="logo" class="main-page-logo"></h2>
+        <div class="content-page-1 col-sm-4">
+          <h3>Comienza a Viajar Con <img src="assets/images/logoBlanco.png" alt="logo" class="main-page-logo"></h3>
           <button class="btn download-btn">Descarga el App</button>
+        </div>
+        <div class="desktop-page-1 col-lg-12">
+          <div class="desktop-text-page-1 col-md-4 col-lg-4">
+            <h3>Disfruta del viaje</h3>
+            <h3>Eres dueño de tu tiempo</h3>
+            <h2>Viaja con <img src="assets/images/logoBlanco.png" alt="LabCar"></h2>
+            <button class="btn download-btn">Registrate</button>
+            <div class="col-md-12">
+              <div class="offset-md-3">O bien</div>
+            </div>
+            <button class="btn download-btn">Conviertete en Conductor</button>
+          </div>
         </div>
       </div>
       <div class="col-md-12" id="page2">
-        <div class="new-app">
-          <h4>La nueva App</h4>
-          <img class="iphone-photo" src="../lab-car-boilerplate/assets/images/iPhone6Plus.png" alt="iphone">
+        <div class="mobile-content-page-2">
+          <div class="new-app">
+            <h4>La nueva App</h4>
+            <img class="iphone-photo" src="assets/images/iPhone6Plus.png" alt="iphone">
+          </div>
+          <div class="text-page-2">
+            <h5>Llega a tu destino aún más rápido</h5>
+          </div>
         </div>
-        <div class="text-page-2">
-          <h5>Llega a tu destino aún más rápido</h5>
+        <div class="desktop-page-2 col-lg-12 row">
+          <div class="desktop-img-page-2 col-lg-6">
+            <img src="assets/images/iPhone6Plus.png" alt="iphone">
+          </div>
+          <div class="desktop-text-page-2 col-lg-3">
+            <h1>Descarga la nueva app</h1>
+            <p>La versión actualizada de LabCar esta llena de nuevas funciones para llegar a donde quieras, aún más fácil
+              y rápido.
+            </p>
+            <p>Con sólo tocar un botón, un auto llega justo a tu Ubicación. Súbete y no te preocupes: tu conductor sabe exactamente
+              a donde ir.
+            </p>
+          </div>
         </div>
       </div>
       <div class="col-md-12" id="page3">
-        <div class="text-page-3">
-          <h4><strong>Conduce cuando quieras</strong></h4>
-          <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-          <button class="btn drive-btn">Conviertete en Conductor</button>
+        <div class="mobile-content-page-3">
+          <div class="text-page-3">
+            <h4><strong>Conduce cuando quieras</strong></h4>
+            <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
+            <button class="btn drive-btn">Conviertete en Conductor</button>
+          </div>
+        </div>
+        <div class="desktop-page-3">
+          <div class="desktop-text-page-3 col-md-8">
+            <h4><strong>Conduce cuando quieras</strong></h4>
+            <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
+            <button class="btn drive-btn">Conviertete en Conductor</button>
+          </div>
         </div>
       </div>
       <div class="col-md-12" id="page4">
-        <div class="content-page-4">
-          <form>
-            <div class="form-tittle">
-              <h4>Tarifas</h4>
-            </div>
-            <div class="form-group">
-              <label><img src="../lab-car-boilerplate/assets/images/shape.png" alt="Location"></label>
-              <input type="text" class="form-control" id="currentLocation" placeholder="Ubicación">
-            </div>
-            <div class="form-group">
-              <label><img src="../lab-car-boilerplate/assets/images/shape2.png" alt="Final Destination"></label>
-              <input type="text" class="form-control" id="finalLocation" placeholder="¿A dónde te diriges?">
-            </div>
-            <div class="route">
-              <button class="btn route-btn">¡Trazar Ruta!</button>
-            </div>
-          </form>
-          <div id="mapid"></div>
+        <div class="content-page-4 row">
+          <div class="page-4-form col-lg-6">
+            <form class="form">
+              <div class="form-tittle">
+                <h4>Tarifas</h4>
+              </div>
+              <div class="form-group">
+                <label><img src="assets/images/shape.png" alt="Location"></label>
+                <input type="text" class="form-control" id="currentLocation" placeholder="Ubicación">
+              </div>
+              <div class="form-group">
+                <label><img src="assets/images/shape2.png" alt="Final Destination"></label>
+                <input type="text" class="form-control" id="finalLocation" placeholder="¿A dónde te diriges?">
+              </div>
+              <div class="route">
+                <button class="btn route-btn">¡Trazar Ruta!</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6">
+            <div id="mapid"></div>
+          </div>
         </div>
       </div>
       <!-- Footer -->
       <footer>
-        <div class="footer font-small bg-dark col-md-12">
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><img src="../lab-car-boilerplate/assets/images/logoBlanco.png"
-              alt="logo"></h5>
+        <div class="footer font-small bg-dark col-md-12 col-lg-12">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><img src="assets/images/logoBlanco.png" alt="logo"></h5>
           <div class="row">
-            <div class="col-4">
+            <div class="col-md-4 col-lg-6 footer-box">
               <div class="mx-auto">
                 <ul class="list-unstyled">
                   <li>
@@ -130,15 +171,15 @@
                 </ul>
               </div>
             </div>
-            <div class="col-4">
-              <div class="list-inline-group list-group-horizontal">
+            <div class="col-md-4 col-lg-6 footer-box text-center">
+              <div class="list-inline-group list-group-horizontal text-center">
                 <a href="#" class="list-inline-group-item"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="list-inline-group-item"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="list-inline-group-item"><i class="fab fa-linkedin-in"></i></a>
                 <a href="#" class="list-inline-group-item"><i class="fab fa-apple"></i></a>
               </div>
-                <img class="btn downloadImg" src="../lab-car-boilerplate/assets/images/enBadgeWebGeneric.png" alt="PlayStore">
-                <img class="btn downloadImg" src="../lab-car-boilerplate/assets/images/appstore.png" alt="appStore">
+              <img class="btn downloadImg" src="assets/images/enBadgeWebGeneric.png" alt="PlayStore">
+              <img class="btn downloadImg" src="assets/images/appstore.png" alt="appStore">
             </div>
           </div>
           <div class="footer-copyright text-center py-3 col-md-12">© 2017 Copyright:
@@ -161,8 +202,8 @@
       crossorigin=""></script>
 
     <!-- Adding JS -->
-    <script src="../lab-car-boilerplate/js/app.js"></script>
-    <script src="../lab-car-boilerplate/js/map.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/map.js"></script>
 
     <!-- End Of document -->
 </body>

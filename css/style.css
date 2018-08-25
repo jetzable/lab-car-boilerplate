@@ -1,4 +1,3 @@
-/* Main style for body*/
 body,
 html,
 .page,
@@ -17,6 +16,10 @@ html,
   color: #FFFFFF;
 }
 
+.footer-copyright {
+    border-top: #FFFFFF solid;
+}
+
 /* Navbar Style */
 .navOptions {
     margin-left: auto;
@@ -31,12 +34,14 @@ html,
 
 .content-page-1 {
     margin-right: 0;
-    margin-left: 1em;
-    margin-top: 12em;
+    margin-top: 75%;
     color: aliceblue;
     background-color: #F7B617;
     padding: 2em;
-    border-radius: 2%
+    border-radius: 2%;
+    float: right;
+    left: 15px;
+    width: 90%;
 }
 
 .new-app {
@@ -49,7 +54,6 @@ html,
     padding: 1.3em;
     color: aliceblue
 }
-
 
 .content-page-4 {
     margin-top: 7em;
@@ -130,9 +134,9 @@ html,
 }
 
 /* Footer list style */
-
-.list-inline-group {
-  width: max-content;
+.footer-box {
+    width: min-content;
+    padding: 1em;
 }
 
 .downloadImg {
@@ -159,9 +163,14 @@ html,
 
 /* Footer sections style */
 
-.footer-style {
-   width: 40%;
-    display: inline-block;
+footer {
+    width: 100%;
+}
+
+.footer h5 {
+    border-bottom: #FFFFFF;
+    border-bottom-style: solid;
+    padding-bottom: 1em;
 }
 
 /* Background style  */
@@ -170,6 +179,7 @@ html,
     background-size: cover;
     background-repeat: no-repeat;
     height: -webkit-fill-available;
+    background-position: bottom
 }
 
 #page2 {
@@ -203,4 +213,56 @@ html,
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Desktop Styles */
+
+.desktop-page-1 {
+    display: none;
+}
+
+.desktop-text-page-1 {
+    float: right;
+    background-color: #F7B617;
+    color: #FFFFFF;
+    margin-top: 5%;
+    padding: 2em;
+    margin-right: 0;
+    left: 1.7%;
+    border-radius: 8px;
+}
+
+.desktop-page-2 {
+    margin-top: 5%;
+    margin-right: 30%;
+    margin-bottom: 5%;
+    border: #FFFFFF ridge;
+    border-left: 0;
+    color: #FFFFFF;
+    padding: 3em;
+    padding-right: 0;
+    right: 0;
+    display: none;
+}
+
+.desktop-img-page-2 {
+    display: inline-block;
+    padding-left: 15%;
+}
+
+.desktop-text-page-2 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.desktop-page-3 {
+    float: right;
+    margin-bottom: 13%;
+}
+
+.desktop-text-page-3 {
+    display: inline-block;
+    margin-top: 30%;
+    font-size: larger;
+    color: #FFFFFF;
 }
